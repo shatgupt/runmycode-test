@@ -1,7 +1,3 @@
-/*
-  This program won't run properly without an input.
-  Try with: abc
-*/
 #include <stdio.h>
 #include <stdlib.h>
 
