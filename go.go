@@ -1,8 +1,14 @@
+/*
+  This program won't run properly without an input.
+  Try with: abc
+*/
 package main
 import "os"
 import "fmt"
-import "strings"
+import "bufio"
 func main() {
-	fmt.Println("Hello World from go!")
-	fmt.Println(fmt.Sprintf("%v Args: [%v]", len(os.Args[1:]), strings.Join(os.Args[1:], ", ")))
+	fmt.Println("Hello World from Go!")
+	reader := bufio.NewReader(os.Stdin)
+	text, _ := reader.ReadString('\n')
+	fmt.Print(text)
 }

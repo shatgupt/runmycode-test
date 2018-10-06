@@ -1,4 +1,8 @@
+/*
+  This program won't run properly without an input.
+  Try with: abc
+*/
 fun main(args: Array<String>) {
-  println("Hello World from kotlin!")
-  println("${args.size} Args: " + args.joinToString(prefix = "[", postfix = "]"))
+    println("Hello World from Kotlin!")
+    println(readLine()!!)
 }

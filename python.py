@@ -1,3 +1,8 @@
+"""
+  This program won't run properly without an input.
+  Try with: abc
+"""
 import sys
-print 'Hello World from python!'
-print str(len(sys.argv[1:])) + ' Args: [' + ', '.join(sys.argv[1:]) + ']'
+print('Hello World from Python!')
+for line in sys.stdin:
+    print line.rstrip()

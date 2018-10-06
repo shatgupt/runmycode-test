@@ -1,3 +1,7 @@
+"""
+  This program won't run properly without an input.
+  Try with: 24 45 16 67 32
+"""
 import sys
 
 class Node:
@@ -115,8 +119,9 @@ if __name__ == '__main__':
     print('Is list empty? %s' % ll.empty())
     print('List: %s' % ll)
 
-    # list_items = sys.stdin.readline().strip().split(' ') # Read via STDIN
-    list_items = sys.argv[1:] # Read via CommandLine: 24 45 16 67 32
+    # Try with: 24 45 16 67 32
+    list_items = sys.stdin.readline().strip().split(' ') # Read via STDIN
+    # list_items = sys.argv[1:] # Read via CommandLine
     if list_items: # list from user input
         for i in list_items:
             ll.append(i)

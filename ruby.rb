@@ -1,2 +1,4 @@
-puts("Hello World from ruby!")
-puts("#{ARGV.length} Args: [#{ARGV.join(', ')}]")
+# This program won't run properly without an input.
+# Try with: abc
+puts "Hello World from Ruby!"
+puts $stdin.read

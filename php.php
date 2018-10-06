@@ -1,4 +1,8 @@
 <?php
-echo "Hello World from php!\n";
-echo count(array_slice($argv, 1)), " Args: [", implode(', ', array_slice($argv, 1)), "]\n";
+/*
+    This program won't run properly without an input.
+    Try with: abc
+*/
+    echo "Hello World from PHP!\n";
+    echo stream_get_contents(STDIN);
 ?>
